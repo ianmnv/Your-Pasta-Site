@@ -50,7 +50,7 @@ nav {
 
 a:link,
 a:visited {
-  color: #f08c00;
+  color: #fab005;
   text-decoration: none;
   font-size: 24px;
   /* display: inline-block; */
@@ -59,9 +59,9 @@ a:visited {
 
 a:hover,
 a:active {
-  /* text-transform: uppercase; */
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #e67700;
   /* padding: 2px; */
 }
 
@@ -71,7 +71,7 @@ hr {
 }
 
 /* BIG COMPONENTS */
-article {
+main {
   margin: 80px auto;
   width: 1000px;
 }
@@ -103,20 +103,28 @@ article {
   font-weight: 600;
 }
 
-/* CAROUSEL */
-.carousel {
-  /* margin: 100px 0; */
+/* --- CAROUSEL SECTION --- */
+
+.car-container {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.deeper-container-car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
 .title-car {
   font-size: 40px;
   text-decoration: underline;
-  width: 290px;
-  margin: 0 auto 120px auto;
+  /* width: 290px;
+  margin: 0 auto 120px auto; */
 }
 
 .car {
@@ -203,10 +211,10 @@ article {
   background-color: #ffeea1;
 }
 
-/* GRID */
+/* --- GRID CONTAINER --- */
 
 .grid-cont-img {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
 
   display: flex;
