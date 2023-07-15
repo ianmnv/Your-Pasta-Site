@@ -1,0 +1,311 @@
+/* for p's   #495057 */
+
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f08c00;
+  line-height: 1;
+  border-top: #fab005 solid 8px;
+}
+
+h1,
+h2,
+h3,
+a:link {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-style: italic;
+}
+
+p {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #343a40;
+  margin: 30px 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+a:link,
+a:visited {
+  color: #f08c00;
+  text-decoration: none;
+  font-size: 24px;
+  /* display: inline-block; */
+  font-weight: 500;
+}
+
+a:hover,
+a:active {
+  /* text-transform: uppercase; */
+  font-size: 24px;
+  font-weight: 600;
+  /* padding: 2px; */
+}
+
+hr {
+  margin: 10px 120px;
+  border-color: #fab005;
+}
+
+/* BIG COMPONENTS */
+article {
+  margin: 80px auto;
+  width: 1000px;
+}
+
+/* SECTIONS */
+
+.first-sect {
+  display: flex;
+  gap: 25px;
+  /* margin: 0 600px 30px 100px; */
+  /* MARGIN: TOP RIGHT BOTTOM LEFT */
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.second-sect {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.title2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* CAROUSEL */
+.carousel {
+  /* margin: 100px 0; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-car {
+  font-size: 40px;
+  text-decoration: underline;
+  width: 290px;
+  margin: 0 auto 120px auto;
+}
+
+.car {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  width: 900px;
+  padding: 15px 0 15px 75px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.car-img {
+  transform: scale(1.4);
+  border-radius: 10px;
+}
+
+.p-car {
+  margin: 0 40px;
+  color: #212529;
+  font-weight: 400;
+}
+
+/* HIDDEN PART */
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+
+  box-shadow: 0 2px 5px black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #000000;
+}
+
+.btn-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.btn-left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* INDIVIDUAL CARS */
+.bolo-p {
+  background-color: #f03e3e;
+}
+.type-p {
+  background-color: #fcc419;
+}
+.alf-p {
+  background-color: #ffde5b;
+}
+
+.bolo-car {
+  background-color: #ff6b6b;
+}
+.type-pas-car {
+  background-color: #ffe066;
+}
+.alf-car {
+  background-color: #ffeea1;
+}
+
+/* GRID */
+
+.grid-cont-img {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  place-content: center;
+
+  background-image: linear-gradient(
+      rgba(228, 228, 228, 0),
+      rgba(115, 115, 115, 0.614)
+    ),
+    url(img/grid/background.jpg);
+  background-size: cover;
+}
+
+.grid-fixed {
+  display: flex;
+  align-items: center;
+}
+
+.grid-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 200px 200px;
+  align-items: center;
+  gap: 50px;
+}
+
+.grid-1 {
+  grid-column: 2 / -1;
+}
+
+.grid-title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 20px;
+
+  text-transform: uppercase;
+  text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.894);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.696);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.201);
+}
+
+.grid-text {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* .bolog-img,
+.fourc-img,
+.alf-img,
+.pesto-img {
+  position: relative;
+}
+
+.alf-t,
+.b-t,
+.p-t,
+.fCh-t {
+  position: absolute;
+} */
+
+.cheesy-g {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* .alf-g {
+}
+.bolog-g {
+}
+.pesto-g {
+} */
+
+/* IMGS */
+.raw-pasta {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 300px;
+}
+
+.grid-img {
+  width: 300px;
+  height: 200px;
+}
+
+.grid-img:hover {
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.615);
+  transform: translateY(-8px) translateX(-8px) scale(1.05);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* .grid-img:hover::before {
+  content: "Pasta";
+} */
